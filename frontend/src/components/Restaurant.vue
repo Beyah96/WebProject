@@ -3,11 +3,6 @@
     <div class="md-layout md-gutter">
       <div class="md-layout-item">
         <md-card>
-          <md-card-header>
-            <div class="md-title">
-              <h1>{{ restaurant.name }}</h1>
-            </div>
-          </md-card-header>
           <md-card-media>
             <img class="photos" v-if="selected" :src="selected" alt="" />
           </md-card-media>
@@ -20,6 +15,11 @@
 
       <div class="md-layout-item md-size-70">
         <md-card>
+          <md-card-header>
+            <div class="md-title">
+              <h1>{{ restaurant.name }}</h1>
+            </div>
+          </md-card-header>
           <md-card-content>
            <GmapMap
           :center="{
