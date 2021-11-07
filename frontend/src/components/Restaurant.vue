@@ -8,6 +8,7 @@
           </md-card-media>
           <md-card-content>
             <h2 class="md-title">Cuisine: {{ restaurant.cuisine }}</h2>
+             <md-divider></md-divider>
             <h2 class="md-title">Ville: {{ restaurant.borough }}</h2>
           </md-card-content>
         </md-card>
